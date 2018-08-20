@@ -58,9 +58,9 @@
 		1193273C2129E6F200B9F598 /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
-				1118A648212B2BA10026F808 /* TasksViewController.swift */,
 				119327412129E6F300B9F598 /* Main.storyboard */,
 				1193273D2129E6F300B9F598 /* AppDelegate.swift */,
+				1118A648212B2BA10026F808 /* TasksViewController.swift */,
 				111657DC212B1A2800D3B66E /* AddTaskViewController.swift */,
 				1193274F2129E73900B9F598 /* TaskManagerModel.swift */,
 				119327442129E6F700B9F598 /* Assets.xcassets */,

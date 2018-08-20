@@ -9,7 +9,7 @@
 import UIKit
 
 class TasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  
+
     @IBOutlet weak var appTableView: UITableView!
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -17,10 +17,11 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = TaskManagerModel.task[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
         cell.detailTextLabel?.text = TaskManagerModel.desc[indexPath.row]
-        
+        cell.detailTextLabel?.textColor = UIColor.white
         return cell
     }
     

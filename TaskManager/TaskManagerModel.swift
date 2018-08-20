@@ -15,7 +15,7 @@ class TaskManagerModel: NSObject {
     
     static func addTask(name: String, description: String) {
         task.append(name)
-        task.append(description)
+        desc.append(description)
     }
 
 }
